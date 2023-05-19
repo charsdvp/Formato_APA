@@ -4,297 +4,302 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/alien.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/alienZ.png" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Formato APA | 420</title>
   </head>
   <body>
-    <header class="header">
-      <div class="contenedor-header">
-        <nav class="nav-header">
-          <ul class="nav-header-list">
-            <li class="nav-header-item">Formato APA</li>
-            <li class="nav-header-item">Página en Desarrollo</li>
-          </ul>
-        </nav>
-        <div class="contenedor-formatos">
-          <div class="contenedor-formato" id="bookItem">
-            <strong>Libro</strong>
-            <i class="fa-solid fa-book-open"></i>
-          </div>
-          <div class="contenedor-formato" id="journalItem">
-            <strong>Revista</strong>
-            <i class="fa-regular fa-newspaper"></i>
-          </div>
-          <div class="contenedor-formato" id="webItem">
-            <strong>Sitio web</strong>
-            <i class="fa-solid fa-blog"></i>
-          </div>
-          <div class="contenedor-formato" id="thesisItem">
-            <strong>Tesis</strong>
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-          <div class="contenedor-formato" id="newsItem">
-            <strong>Periódico</strong>
-            <i class="fa-solid fa-bullhorn"></i>
-          </div>
-          <div class="contenedor-formato" id="audiovisualItem">
-            <strong>Recurso AudioVisual</strong>
-            <i class="fa-solid fa-podcast"></i>
-          </div>
-        </div>
-        <div class="contenedor-formatos-data">
-          <div class="contenedor-datos-libro">
-            <strong>Formato de cita APA para Libro</strong>
-            <div class="contenedor-form-flex">
-              <form class="contenedor-form">
-                <label for="apellido-autor">Apellido del autor :</label>
-                <input type="text" name="apellido-autor" id="apellido-autor" autocomplete="off"/>
-                <label for="iniciales-autor">Iniciales del autor :</label>
-                <input type="text" name="iniciales-autor" id="iniciales-autor" autocomplete="off"/>
-                <label for="year-publicacion">Año de publicación :</label>
-                <input
-                  type="text"
-                  name="year-publicacion"
-                  id="year-publicacion"
-                  autocomplete="off"
-                />
-                <label for="titulo-libro">Titulo del libro :</label>
-                <input type="text" name="titulo-libro" id="titulo-libro" autocomplete="off"/>
-                <label for="num-paginas">Paginas :</label>
-                <input type="text" name="num-paginas" id="num-paginas" autocomplete="off">
-                <label for="lugar-publicacion">Ciudad de publicación :</label>
-                <input
+  <header class="header">
+    <div class="container-header">
+      <nav class="nav-header">
+        <ul class="nav-header-list">
+          <li class="nav-list-item">Formato APA</li>
+          <li class="nav-list-item"><a class="list-item-link" href="https://www.facebook.com/profile.php?id=100087881793975" target="_blank">Error420</a></li>
+        </ul>
+      </nav>
+      <ul class="container-header-formats">
+        <li class="container-format-item" id="book">
+          <strong>Libro</strong>
+          <i class="fa-solid fa-book fa-lg"></i>
+        </li>
+        <li class="container-format-item" id="journal">
+          <strong>Revista</strong>
+          <i class="fa-solid fa-newspaper fa-lg"></i>
+        </li>
+        <li class="container-format-item" id="website">
+          <strong>Sitio Web</strong>
+          <i class="fa-solid fa-globe fa-lg"></i>
+        </li>
+        <li class="container-format-item" id="thesis">
+          <strong>Tesis</strong>
+          <i class="fa-solid fa-graduation-cap fa-lg"></i>
+        </li>
+        <li class="container-format-item" id="newspaper">
+          <strong>Periodico</strong>
+          <i class="fa-solid fa-pen-to-square fa-lg"></i>
+        </li>
+        <li class="container-format-item" id="audiovisual-resource">
+          <strong>Recurso AudioVisual</strong> 
+          <i class="fa-solid fa-book fa-lg"></i>
+        </li>
+      </ul>
+      <div class="container-header-forms">
+        <!-- ! contenedor formulario libro -->
+        <div class="container-header-form-book">
+          <strong class="title-format">Formato de cita APA para Libro</strong>
+          <div class="container-form-flex">
+            <form class="container-form form-book">
+              <label for="lastName-author-book">Apellido del autor :</label>
+              <input type="text" name="lastName-author-book" id="lastName-author-book" autocomplete="off" placeholder="Smith"/>
+              <label for="initials-author-book">Iniciales del autor :</label>
+              <input type="text" name="initials-author-book" id="initials-author-book" autocomplete="off" placeholder="J."/>
+              <label for="year-publication-book">Año de publicación :</label>
+              <input
                 type="text"
-                name="lugar-publicacion"
-                id="lugar-publicacion"
+                name="year-publication-book"
+                id="year-publication-book"
                 autocomplete="off"
-                />
-                <label for="lugar-edo-publicacion">Estado :</label>
-                <input type="text" name="lugar-edo-publicacion" id="lugar-edo-publicacion" autocomplete="off"/>
-                <label for="nombre-editorial">Editorial :</label>
-                <input
-                  type="text"
-                  name="nombre-editorial"
-                  id="nombre-editorial"
-                  autocomplete="off"
-                />
-              </form>
-              <p class="ejemplo-libro">Smith, J. D. (2020). El arte de programar en Python. Ciudad de México, México: Editorial ABC.</p>
-            </div>
+                placeholder="2000"
+              />
+              <label for="title-book">Titulo del libro :</label>
+              <input type="text" name="title-book" id="title-book" autocomplete="off" placeholder="The Power of Knowledge"/>
+              <label for="num-pages-book">Paginas :</label>
+              <input type="text" name="num-pages-book" id="num-pages-book" autocomplete="off" placeholder="45-50"/>
+              <label for="place-publication-book">Ciudad de publicación :</label>
+              <input
+              type="text"
+              name="place-publication-book"
+              id="place-publication-book"
+              autocomplete="off"
+              placeholder="New York"
+              />
+              <label for="state-publication-book">Estado :</label>
+              <input type="text" name="state-publication-book" id="state-publication-book" autocomplete="off" placeholder="NY"/>
+              <label for="name-publisher-book">Editorial :</label>
+              <input
+                type="text"
+                name="name-publisher-book"
+                id="name-publisher-book"
+                autocomplete="off"
+                placeholder="XYZ Publishing."
+              />
+            </form>
+            <p class="example example-book">
+              Smith, J. (2022). The Power of Knowledge (pp. 25-50). New York, NY: XYZ Publishing.
+            </p>
           </div>
-          <div class="contenedor-datos-revista">
-            <strong> Formato de cita APA para Revista</strong>
-            <div class="contenedor-form-flex">
-              <form class="contenedor-form">
-                <label for="apellido-autor-revista">Apellido del autor :</label>
-                <input
-                  type="text"
-                  name="apellido-autor-revista"
-                  id="apellido-autor-revista"
-                  autocomplete="off"
-                />
-                <label for="iniciales-autor-revista">Iniciales del autor :</label>
-                <input
-                  type="text"
-                  name="iniciales-autor-revista"
-                  id="iniciales-autor-revista"
-                  autocomplete="off"
-                />
-                <label for="year-publicacion-revista">Año de publicación :</label>
-                <input
-                  type="text"
-                  name="year-publicacion-revista"
-                  id="year-publicacion-revista"
-                  autocomplete="off"
-                />
-                <label for="titulo-articulo">Titulo del articulo :</label>
-                <input type="text" name="titulo-articulo" id="titulo-articulo" autocomplete="off"/>
-                <label for="titulo-revista">Titulo de la revista :</label>
-                <input type="text" name="titulo-revista" id="titulo-revista" autocomplete="off"/>
-                <label for="volumen-revista">Volumen :</label>
-                <input type="text" name="volumen-revista" id="volumen-revista" autocomplete="off"/>
-                <!-- <label for="edicion-revista">Edición :</label>
-                <input type="text" name="edicion-revista" id="edicion-revista" autocomplete="off"/> -->
-                <label for="paginas-articulo">Páginas del artículo :</label>
-                <input
-                  type="text"
-                  name="paginas-articulo"
-                  id="paginas-articulo"
-                  autocomplete="off"
-                />
-                <label for="DOI">DOI (Digital Object Identifier) :</label>
-                <input type="text" name="DOI" id="DOI" autocomplete="off">
-              </form>
-              <p class="ejemplo-revista">Johnson, A. M., & Smith, B. R. (2022). The impact of exercise on mental health. Journal of Psychology, 15(3), 123-145. https://doi.org/10.xxxxxxxx</p>
-            </div>
+          <button class="btn-generate" id="btn-book">Generar Cita</button>
+        </div>
+        <!-- ! contenedor formulario revista -->
+        <div class="container-header-form-journal">
+          <strong class="title-format">Formato de cita APA para Revista</strong>
+          <div class="container-form-flex">
+            <form class="container-form form-journal">
+              <label for="lastName-author-journal">Apellido del autor :</label>
+              <input type="text" name="lastName-author-journal" id="lastName-author-journal" autocomplete="off" placeholder="Smith"/>
+              <label for="initials-author-journal">Iniciales del autor :</label>
+              <input type="text" name="initials-author-journal" id="initials-author-journal" autocomplete="off" placeholder="B. R."/>
+              <label for="year-publication-journal">Año de publicación :</label>
+              <input
+                type="text"
+                name="year-publication-journal"
+                id="year-publication-journal"
+                autocomplete="off"
+                placeholder="2000"
+              />
+              <label for="title-article-journal">Titulo del articulo :</label>
+              <input type="text" name="title-article-journal" id="title-article-journal" autocomplete="off" placeholder="The impact of exercise on mental health"/>
+              <label for="name-journal">Nombre de la revista :</label>
+              <input type="text" name="name-journal" id="name-journal" autocomplete="off" placeholder="Journal of Psychology"/>
+              <label for="vol-journal">Volumen :</label>
+              <input
+              type="text"
+              name="vol-journal"
+              id="vol-journal"
+              autocomplete="off"
+              placeholder="15(3)"
+              />
+              <label for="pages-journal">Paginas :</label>
+              <input type="text" name="pages-journal" id="pages-journal" autocomplete="off" placeholder="45-70"/>
+              <label for="url-journal">DOI o URL :</label>
+              <input
+                type="text"
+                name="url-journal"
+                id="url-journal"
+                autocomplete="off"
+                placeholder="10.1234/123456789"
+              />
+            </form>
+            <p class="example example-journal">
+              Smith, B. R. (2022). The impact of exercise on mental health. Journal of Psychology, 15(3), 123-145. https://doi.org/10.xxxxxxxx
+            </p>
           </div>
-          <div class="contenedor-datos-web">
-            <strong> Formato de cita APA para Sitio Web</strong>
-            <div class="contenedor-form-flex">
-              <form class="contenedor-form">
-                <label for="apellido-autor-web">Apellido del autor :</label>
-                <input
-                  type="text"
-                  name="apellido-autor-web"
-                  id="apellido-autor-web"
-                  autocomplete="off"
-                />
-                <label for="iniciales-autor-web">Iniciales del autor :</label>
-                <input
-                  type="text"
-                  name="iniciales-autor-web"
-                  id="iniciales-autor-web"
-                  autocomplete="off"
-                />
-                <label for="year-publicacion-web">Año de publicación :</label>
-                <input
-                  type="text"
-                  name="year-publicacion-web"
-                  id="year-publicacion-web"
-                  autocomplete="off"
-                />
-                <label for="titulo-pagina"
-                  >Titulo del artículo :</label
-                >
-                <input type="text" name="titulo-pagina" id="titulo-pagina" autocomplete="off"/>
-                <label for="titulo-web">Titulo del Sitio Web :</label>
-                <input type="text" name="titulo-web" id="titulo-web" autocomplete="off"/>
-                <label for="pagina-url">URL :</label>
-                <input type="text" name="pagina-url" id="pagina-url" autocomplete="off"/>
-              </form>
-              <p class="ejemplo-web">Smith, J. (2022). Cómo cultivar plantas en interiores. Guía de Jardinería. Recuperado de https://www.guiadejardineria.com/cultivo-plantas-interiores</p>
-            </div>
+          <button class="btn-generate" id="btn-journal">Generar Cita</button>
+        </div>
+        <!-- ! contenedor formulario web -->
+        <div class="container-header-form-web">
+          <strong class="title-format">Formato de cita APA para Sitio Web</strong>
+          <div class="container-form-flex">
+            <form class="container-form form-web">
+              <label for="author-web">Autor o entidad responsable :</label>
+              <input type="text" name="author-web" id="author-web" autocomplete="off" placeholder="Moreth"/>
+              <label for="initials-author-web">Iniciales del autor :</label>
+              <input type="text" name="initials-author-web" id="initials-author-web" autocomplete="off" placeholder="D."/>
+              <label for="year-publication-web">Año de publicación :</label>
+              <input
+                type="text"
+                name="year-publication-web"
+                id="year-publication-web"
+                autocomplete="off"
+                placeholder="7 de octubre de 2019"
+              />
+              <label for="title-article-web">Titulo del articulo :</label>
+              <input type="text" name="title-article-web" id="title-article-web" autocomplete="off" placeholder=" 7 consejos para pedir una hipoteca"/>
+              <label for="name-web">Nombre del sitio web :</label>
+              <input type="text" name="name-web" id="name-web" autocomplete="off" placeholder="Rastreator"/>
+              <label for="url-web">URL :</label>
+              <input
+              type="text"
+              name="url-web"
+              id="url-web"
+              autocomplete="off"
+              placeholder="https://www.rastreator.com/hipotecas/consejos/pedir-una-hipoteca.aspx"
+              />              
+            </form>
+            <p class="example example-web">
+              Moret, D. (7 de octubre de 2019). 7 consejos para pedir una hipoteca. Rastreator.Recuperado de https://www.rastreator.com/hipotecas/consejos/pedir-una-hipoteca.aspx
+            </p>
           </div>
-          <!-- ? Contenedor datos tesis-->
-          <div class="contenedor-datos-tesis">
-            <strong>Formato de cita APA para Tesis</strong>            
-            <div class="contenedor-form-flex">
-              <form class="contenedor-form">
-                <label for="apellido-autor-tesis">Apellido del autor :</label>
-                <input
-                  type="text"
-                  name="apellido-autor-web"
-                  id="apellido-autor-tesis"
-                  autocomplete="off"
-                />
-                <label for="iniciales-autor-tesis">Iniciales del autor :</label>
-                <input
-                  type="text"
-                  name="iniciales-autor-tesis"
-                  id="iniciales-autor-tesis"
-                  autocomplete="off"
-                />
-                <label for="year-publicacion-tesis">Año de publicación :</label>
-                <input
-                  type="text"
-                  name="year-publicacion-tesis"
-                  id="year-publicacion-tesis"
-                  autocomplete="off"
-                />
-                <label for="titulo-tesis"
-                  >Titulo de la tesis:</label
-                >
-                <input type="text" name="titulo-tesis" id="titulo-tesis" autocomplete="off"/>
-                <label for="tipo-tesis">Maestría o Doctorado :</label>
-                <input type="text" name="tipo-tesis" id="tipo-tesis" autocomplete="off"/>
-                <label for="institucion-tesis">Nombre de la institución :</label>
-                <input type="text" name="institucion-tesis" id="institucion-tesis" autocomplete="off"/>
-                <label for="ubicacion-institucion">Ubicación :</label>
-                <input type="text" name="ubicacion-institucion" id="ubicacion-institucion">
-              </form>
-              <p class="ejemplo-tesis">Smith, J. D. (2022). El impacto de la terapia de arte en el bienestar emocional (Tesis de doctorado). Universidad de California, Los Ángeles, CA.</p>
-            </div>
-          </div>                  
-          <!-- ? Contenedor datos periodico-->
-          <div class="contenedor-datos-periodico">
-            <strong>Formato de cita APA para Periódico</strong>            
-            <div class="contenedor-form-flex">
-              <form class="contenedor-form">
-                <label for="apellido-autor-periodico">Apellido del autor :</label>
-                <input
-                  type="text"
-                  name="apellido-autor-periodico"
-                  id="apellido-autor-periodico"
-                  autocomplete="off"
-                />
-                <label for="iniciales-autor-periodico">Iniciales del autor :</label>
-                <input
-                  type="text"
-                  name="iniciales-autor-periodico"
-                  id="iniciales-autor-periodico"
-                  autocomplete="off"
-                />
-                <label for="year-publicacion-periodico">Fecha de publicación :</label>
-                <input
-                  type="text"
-                  name="year-publicacion-periodico"
-                  id="year-publicacion-periodico"
-                  autocomplete="off"
-                />
-                <label for="titulo-articulo-periodico"
-                  >Titulo del articulo:</label
-                >
-                <input type="text" name="titulo-articulo-periodico" id="titulo-articulo-periodico" autocomplete="off"/>
-                <label for="name-periodico">Nombre del periódico :</label>
-                <input type="text" name="name-periodico" id="name-periodico" autocomplete="off">
-                <label for="paginas-periodico">Paginas :</label>
-                <input type="text" name="paginas-periodico" id="paginas-periodico" autocomplete="off"/>
-                <label for="url-periodico">URL :</label>
-                <input type="text" name="url-periodico" id="url-periodico" autocomplete="off"/>                
-              </form>
-              <p class="ejemplo-periodico">Thompson, S. (2023, 5 de mayo). Nuevas investigaciones sobre el cambio climático. El Diario, p. A3. Recuperado de https://www.eldiario.com/articulo/nuevas-investigaciones-cambio-climatico</p>
-            </div>
-          </div>          
-          <div class="contenedor-datos-recursoA">
-            <strong>Formato de cita APA para Recurso AudioVisual</strong>            
-            <div class="contenedor-form-flex">
-              <form class="contenedor-form">
-                <label for="autor-video">Nombre de usuario del canal:</label>
-                <input
-                  type="text"
-                  name="autor-video"
-                  id="autor-video"
-                  autocomplete="off"
-                />
-                <label for="fecha-video">Fecha de publicación :</label>
-                <input
-                  type="text"
-                  name="fecha-video"
-                  id="fecha-video"
-                  autocomplete="off"
-                />
-                <label for="titulo-video">Titulo del video :</label>
-                <input
-                  type="text"
-                  name="titulo-video"
-                  id="titulo-video"
-                  autocomplete="off"
-                />
-                <label for="formato-video"
-                  >Formato :</label
-                >
-                <input type="text" name="formato-video" id="formato-video" autocomplete="off"/>
-                <label for="nombre-sitio-web">Nombre del sitio web :</label>
-                <input type="text" name="nombre-sitio-web" id="nombre-sitio-web" autocomplete="off">                
-                <label for="url-video">URL :</label>
-                <input type="text" name="url-video" id="url-video" autocomplete="off"/>                
-              </form>
-              <p class="ejemplo-resourceA">Thompson, S. (2023, 5 de mayo). Nuevas investigaciones sobre el cambio climático. El Diario, p. A3. Recuperado de https://www.eldiario.com/articulo/nuevas-investigaciones-cambio-climatico</p>
-            </div>
-          </div>         
-          <button class="btn-cita">Generar Cita</button>
+          <button class="btn-generate" id="btn-web">Generar Cita</button>
+        </div>
+        <!-- ! contenedor formulario tesis -->
+        <div class="container-header-form-thesis">
+          <strong class="title-format">Formato de cita APA para Tesis</strong>
+          <div class="container-form-flex">
+            <form class="container-form form-thesis">
+              <label for="lastname-author-thesis">Apellido del autor :</label>
+              <input type="text" name="lastname-author-thesis" id="lastname-author-thesis" autocomplete="off" placeholder="Smith"/>
+              <label for="initials-author-thesis">Iniciales del autor :</label>
+              <input type="text" name="initials-author-thesis" id="initials-author-thesis" autocomplete="off" placeholder="D. A."/>
+              <label for="year-publication-thesis">Año de publicación :</label>
+              <input
+                type="text"
+                name="year-publication-thesis"
+                id="year-publication-thesis"
+                autocomplete="off"
+                placeholder="2019"
+              />
+              <label for="title-thesis">Titulo de la tesis :</label>
+              <input type="text" name="title-thesis" id="title-thesis" autocomplete="off" placeholder="Investigating the Effects of Climate Change on Biodiversity in Tropical Rainforests"/>
+              <label for="type-thesis">Tipo de tesis :</label>
+              <input type="text" name="type-thesis" id="type-thesis" autocomplete="off" placeholder="Doctorado"/>
+              <label for="name-intitution-thesis">Nombre de la institución :</label>
+              <input
+              type="text"
+              name="name-intitution-thesis"
+              id="name-intitution-thesis"
+              autocomplete="off"
+              placeholder="Universidad Nacional"
+              />        
+              <label for="ubication-intitution-thesis">Ubicación de la institución :</label>
+              <input
+              type="text"
+              name="ubication-intitution-thesis"
+              id="ubication-intitution-thesis"
+              autocomplete="off"
+              placeholder="Los Ángeles, CA"
+              />        
+            </form>
+            <p class="example example-thesis">
+              Smith, J. A. (2019). The Impact of Social Media on Adolescent Mental Health: A Comparative Study (Tesis de doctorado). Universidad de California, Los Ángeles.
+            </p>
+          </div>
+          <button class="btn-generate" id="btn-thesis">Generar Cita</button>
+        </div>
+        <!-- ! contenedor formulario periodico -->
+        <div class="container-header-form-newspaper">
+          <strong class="title-format">Formato de cita APA para Periodico</strong>
+          <div class="container-form-flex">
+            <form class="container-form form-newspaper">
+              <label for="lastname-author-newspaper">Apellido del autor :</label>
+              <input type="text" name="lastname-author-newspaper" id="lastname-author-newspaper" autocomplete="off" placeholder="Smith"/>
+              <label for="initials-author-newspaper">Iniciales del autor :</label>
+              <input type="text" name="initials-author-newspaper" id="initials-author-newspaper" autocomplete="off" placeholder="J. A."/>
+              <label for="date-publication-newspaper">Fecha de publicación :</label>
+              <input
+                type="text"
+                name="date-publication-newspaper"
+                id="date-publication-newspaper"
+                autocomplete="off"
+                placeholder="2022, 10 de mayo"
+              />
+              <label for="title-article-newspaper">Titulo del articulo :</label>
+              <input type="text" name="title-article-newspaper" id="title-article-newspaper" autocomplete="off" placeholder="Avances en la lucha contra el cambio climático"/>
+              <label for="name-newspaper">Nombre del periodico :</label>
+              <input type="text" name="name-newspaper" id="name-newspaper" autocomplete="off" placeholder="El universal"/>
+              <label for="pages-newspaper">Páginas :</label>
+              <input
+              type="text"
+              name="pages-newspaper"
+              id="pages-newspaper"
+              autocomplete="off"
+              placeholder="A1, A3"
+              />                      
+            </form>
+            <p class="example example-newspaper">
+              Smith, J. A. (2022, 10 de mayo). Avances en la lucha contra el cambio climático. El universal, pp. A1, A4.
+            </p>
+          </div>
+          <button class="btn-generate" id="btn-newspaper">Generar Cita</button>
+        </div>
+        <!-- ! contenedor formulario recurso audiovisual -->
+        <div class="container-header-form-audiovisual-resource">
+          <strong class="title-format">Formato de cita APA para Recurso AudioVisual</strong>
+          <div class="container-form-flex">
+            <form class="container-form form-audiovisual-resource">
+              <label for="lastname-author-audiovisual-resource">Apellido del autor :</label>
+              <input type="text" name="lastname-author-audiovisual-resource" id="lastname-author-audiovisual-resource" autocomplete="off" placeholder="Smith"/>
+              <label for="initials-author-audiovisual-resource">Iniciales del autor :</label>
+              <input type="text" name="initials-author-audiovisual-resource" id="initials-author-audiovisual-resource" autocomplete="off" placeholder="J. A."/>
+              <label for="date-publication-audiovisual-resource">Fecha de publicación :</label>
+              <input
+                type="text"
+                name="date-publication-audiovisual-resource"
+                id="date-publication-audiovisual-resource"
+                autocomplete="off"
+                placeholder="2022, 10 de mayo"
+              />
+              <label for="title-audiovisual-resource">Titulo del recurso :</label>
+              <input type="text" name="title-audiovisual-resource" id="title-audiovisual-resource" autocomplete="off" placeholder="Cómo meditar para reducir el estrés"/>
+              <label for="format-audiovisual-resource">Formato del recurso :</label>
+              <input type="text" name="format-audiovisual-resource" id="format-audiovisual-resource" autocomplete="off" placeholder="Video"/>
+              <label for="url-audiovisual-resource">URL :</label>
+              <input
+              type="text"
+              name="url-audiovisual-resource"
+              id="url-audiovisual-resource"
+              autocomplete="off"
+              placeholder="https://www.youtube.com/watch?v=xxxxxxxxxxx"
+              />                      
+            </form>
+            <p class="example example-audiovisual-resource">
+              Smith, J. (2022, 15 de abril). Cómo meditar para reducir el estrés [Video]. Recuperado de https://www.youtube.com/watch?v=xxxxxxxxxxx
+            </p>
+          </div>
+          <button class="btn-generate" id="btn-audiovisual-resource">Generar Cita</button>
         </div>
       </div>
-    </header>
-    <footer class="footer">
-      <small>&COPY; Carlos Sánchez && Error420</small>
-    </footer>
+      </div>
+    </div>
+  </header>
+  <footer class="footer">
+    <small>&COPY; Carlos Sánchez && Error420</small>
+  </footer>
     <script
       src="https://kit.fontawesome.com/2b71dc467a.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>
